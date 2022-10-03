@@ -6,13 +6,8 @@ function get_c_file_score(){
   
   c_file_executable_path=${c_file_path%.c}
   
-  #echo "c file path: $c_file_path"
-  #echo "c file executable path: $c_file_executable_path"
-  
   gcc $c_file_path -o $c_file_executable_path
   gcc_exit_code=$?
-  
-  #echo "gcc exit code: $gcc_exit_code"
   
   # C file cannot compile
   if [ $gcc_exit_code == 1 ] 
@@ -24,8 +19,6 @@ function get_c_file_score(){
   # Execute the created executable file
   $c_file_executable_path
   c_file_exit_code=$?
-  
-  #echo "C file exit code: $c_file_exit_code"
   
   # Check if c file exit code is correct
   if [ $c_file_exit_code == $c_file_expected_exit_code ]
