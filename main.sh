@@ -132,7 +132,5 @@ printf "%s \n" ${student_id_and_score_array}
 echo "result_file_path: $result_file_path"
 ## END DEBUGGING ###
 
-
-
 ### MAIN PROGRAM ENDS HERE ###
 
