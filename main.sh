@@ -38,6 +38,7 @@ function get_student_id(){
   output=$student_id
   
   ### DEBUG PURPOSE ONLY ###
+  ### UNCOMMENTING WILL "break" the function ###
   #echo "c file_path: $c_file_path"
   #echo "c_file_path: $c_file_path_directory"
   #echo "student id: $student_id"
@@ -57,6 +58,7 @@ function get_student_id_and_score(){
   output="$student_id;$c_file_score"
   
   ### FOR DEBUGGING ONLY ###
+  ### UNCOMMENTING WILL "break" the function ###
   #echo "c_file_score: $c_file_score"
   #echo "student id: $student_id"
   #echo "output: $output"
@@ -77,6 +79,7 @@ function get_c_file_path_array(){
   done
   
   ### DEBUGGING PURPOSE ONLY ###
+  ### UNCOMMENTING WILL "break" the function ###
   #echo "project_directory_path: $project_directory_path"
   #echo "lab_number: $lab_number"
   #echo "question_number: $question_number"
